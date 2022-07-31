@@ -4105,6 +4105,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_9">
@@ -4477,6 +4479,20 @@
     <li class="md-nav__item">
       <a href="../../../math/number-theory/zhou/" class="md-nav__link">
         洲阁筛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../math/number-theory/quadratic.md" class="md-nav__link">
+        二次域
       </a>
     </li>
   
@@ -4943,6 +4959,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_11">
@@ -4956,6 +4974,20 @@
           线性代数
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/linear-algebra-index/" class="md-nav__link">
+        线性代数简介
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -5368,10 +5400,111 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_15" type="checkbox" id="__nav_8_15" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_15">
+          概率论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="概率论" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_15">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../../math/expectation/" class="md-nav__link">
-        概率初步
+        快速上手
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/probability/basic-conception/" class="md-nav__link">
+        基本概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/probability/conditional-probability/" class="md-nav__link">
+        条件概率与独立性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/probability/random-variable/" class="md-nav__link">
+        随机变量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/probability/exp-var/" class="md-nav__link">
+        随机变量的数字特征
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -8905,9 +9038,9 @@
 <p>”适配器是使一种事物的行为类似于另外一种事物行为的一种机制”，适配器对容器进行包装，使其表现出另外一种行为。</p>
 </blockquote>
 <ul>
-<li><strong>栈</strong> <code>(stack</code>) 后进先出 (LIFO) 的容器。</li>
-<li><strong>队列</strong>(<code>queue</code>) 先进先出 (FIFO) 的容器。</li>
-<li><strong>优先队列</strong>(<code>priority_queue</code>) 元素的次序是由作用于所存储的值对上的某种谓词决定的的一种队列。</li>
+<li><strong>栈</strong> (<code>stack</code>) 后进先出 (LIFO) 的容器，默认是对双端队列(<code>deque</code>) 的包装。</li>
+<li><strong>队列</strong>(<code>queue</code>) 先进先出 (FIFO) 的容器，默认是对双端队列(<code>deque</code>) 的包装。</li>
+<li><strong>优先队列</strong>(<code>priority_queue</code>) 元素的次序是由作用于所存储的值对上的某种谓词决定的的一种队列，默认是对向量(<code>vector</code>) 的包装。</li>
 </ul>
 <h2 id="_6">共同点<a class="headerlink" href="#_6" title="Permanent link"></a></h2>
 <h3 id="_7">容器声明<a class="headerlink" href="#_7" title="Permanent link"></a></h3>

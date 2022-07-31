@@ -3996,6 +3996,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_9">
@@ -4368,6 +4370,20 @@
     <li class="md-nav__item">
       <a href="../../number-theory/zhou/" class="md-nav__link">
         洲阁筛
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../math/number-theory/quadratic.md" class="md-nav__link">
+        二次域
       </a>
     </li>
   
@@ -4968,6 +4984,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_8_11">
@@ -4981,6 +4999,20 @@
           线性代数
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linear-algebra-index/" class="md-nav__link">
+        线性代数简介
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -5393,10 +5425,111 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_15" type="checkbox" id="__nav_8_15" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_15">
+          概率论
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="概率论" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_15">
+          <span class="md-nav__icon md-icon"></span>
+          概率论
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../expectation/" class="md-nav__link">
-        概率初步
+        快速上手
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../probability/basic-conception/" class="md-nav__link">
+        基本概念
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../probability/conditional-probability/" class="md-nav__link">
+        条件概率与独立性
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../probability/random-variable/" class="md-nav__link">
+        随机变量
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../probability/exp-var/" class="md-nav__link">
+        随机变量的数字特征
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -9178,7 +9311,7 @@ f(\omega_n^{k+n/2}) &amp;= G(\omega_n^{2k+n}) + \omega_n^{k+n/2}  \times H(\omeg
 </details>
 <p>实际上，位逆序变换可以 <span class="arithmatex">\(O(n)\)</span> 从小到大递推实现，设 <span class="arithmatex">\(len=2^k\)</span>，其中 <span class="arithmatex">\(k\)</span> 表示二进制数的长度，设 <span class="arithmatex">\(R(x)\)</span> 表示长度为 <span class="arithmatex">\(k\)</span> 的二进制数 <span class="arithmatex">\(x\)</span> 翻转后的数（高位补 <span class="arithmatex">\(0\)</span>）。我们要求的是 <span class="arithmatex">\(R(0),R(1),\cdots,R(n-1)\)</span>。</p>
 <p>首先 <span class="arithmatex">\(R(0)=0\)</span>。</p>
-<p>我们从小到大求 <span class="arithmatex">\(R(x)\)</span>。因此在求 <span class="arithmatex">\(R(x)\)</span> 时，<span class="arithmatex">\(R\left(\left\lfloor \dfrac{x}{2} \right\rfloor\right)\)</span> 的值是已知的。因此我们把 <span class="arithmatex">\(x\)</span> 右移一位（除以 <span class="arithmatex">\(2\)</span>），然后取反，再右移一位，就得到了 <span class="arithmatex">\(x\)</span>  <strong>除了（二进制）个位</strong> 之外其它位的翻转结果。</p>
+<p>我们从小到大求 <span class="arithmatex">\(R(x)\)</span>。因此在求 <span class="arithmatex">\(R(x)\)</span> 时，<span class="arithmatex">\(R\left(\left\lfloor \dfrac{x}{2} \right\rfloor\right)\)</span> 的值是已知的。因此我们把 <span class="arithmatex">\(x\)</span> 右移一位（除以 <span class="arithmatex">\(2\)</span>），然后翻转，再右移一位，就得到了 <span class="arithmatex">\(x\)</span>  <strong>除了（二进制）个位</strong> 之外其它位的翻转结果。</p>
 <p>考虑个位的翻转结果：如果个位是 <span class="arithmatex">\(0\)</span>，翻转之后最高位就是 <span class="arithmatex">\(0\)</span>。如果个位是 <span class="arithmatex">\(1\)</span>，则翻转后最高位是 <span class="arithmatex">\(1\)</span>，因此还要加上 <span class="arithmatex">\(\dfrac{len}{2}=2^{k-1}\)</span>。综上</p>
 <div class="arithmatex">\[
 R(x)=\left\lfloor \frac{R\left(\left\lfloor \frac{x}{2} \right\rfloor\right)}{2} \right\rfloor + (x\bmod 2)\times \frac{len}{2}
